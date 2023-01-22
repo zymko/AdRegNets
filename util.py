@@ -1,6 +1,7 @@
 import numpy as np
 import torch
 import copy
+torch.manual_seed(123)
 
 def get_initial_guess(coeff_matrix, noises, grad_requires=True):
     coef = copy.copy(coeff_matrix)
